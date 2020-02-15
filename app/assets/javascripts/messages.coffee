@@ -2,8 +2,30 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-message_appender = (content) ->
-  $('#messages-table').append content
 
-$(document).on 'turbolinks:load', ->
-  message_appender('hello world!')
+# --------------------------------------------
+# original javascript:
+# message_appender = function(content) { 
+#   $('#messages-table').append(content);
+# }
+
+# $(document).on('turbolinks:load', function() { 
+#   message_appender('hello, world!');
+# });
+
+
+
+
+# --------------------------------------------
+# coffee script:
+# message_appender = (content) ->
+#   $('#messages-table').append(content)
+
+# $(document).on 'turbolinks:load', ->
+#   message_appender('hello world!')
+
+
+# --------------------------------------------
+showDateCoffeeScript = -> new Date
+
+console.log("showDateCoffeeScript:  ", showDateCoffeeScript())

@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// showDateJavaScript = () => {
+//   return new Date;
+// }
+
+showDateJavaScript = () => new Date
+
+console.log("showDateJavaScript:  ", showDateJavaScript())
